@@ -24,7 +24,7 @@ def channel_data(channel_id):
             )
         response = request.execute()
         ch_data={"channel_id":channel_id,
-            "channel_name":response['items'][0]['snippet'].get('title',''),
+            "channel_name":response['items'][0]['snippet'].['title'],
             "channel_description":response['items'][0]['snippet']['description'],
             "channel_Playlists_id":response['items'][0]['contentDetails']['relatedPlaylists']['uploads'],
             "channel_viewCount":response['items'][0]['statistics']['viewCount'],
