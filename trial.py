@@ -12,7 +12,7 @@ api_service_name = "youtube"
 api_version = "v3"
 
 #it will be keep it as a public variable
-api_key="AIzaSyAUpi9XT15zWAd0hU-atPeK9wEyk-AWBaw"
+api_key="AIzaSyA3HmmdP3jBxAn6uCeGQPOlgi0IAlqIpvo"
 youtube = googleapiclient.discovery.build(api_service_name, api_version, developerKey=api_key)
 
 
